@@ -1,0 +1,141 @@
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.slider {
+  z-index:1;
+  position:fixed;
+  top: 470px;
+}
+
+.primaryChart {
+  z-index:0;
+}
+
+.slider .axis text {
+  font: 11px sans-serif;
+}
+ 
+.slider .axis path {
+  display: none;
+}
+ 
+.slider .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+ 
+.slider .grid-background {
+  fill: #ddd;
+}
+ 
+.slider .grid line,
+.slider .grid path {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+ 
+.slider .grid .minor.tick line {
+  stroke-opacity: .5;
+}
+ 
+.slider .brush .extent {
+  z-index:1;
+}
+
+.ssForm
+{
+  display: inline-block;
+	margin-left: 53px;
+}
+
+.errorBarForm
+{
+  display: inline-block;
+  margin-left: 450px;
+}
+
+.slider rect {
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+svg {
+  display: inline-block;
+}
+
+.year.genreYear rect {
+  stroke: black;
+  cursor: pointer;
+}
+
+.legend line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.filter rect {
+	shape-rendering: crispEdges;
+	cursor: pointer;
+}
+
+.infodiv{
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.year rect {
+  stroke: black;
+  stroke-width: 0px;
+}
+
+.year .selected {
+  stroke-width: 1px;
+}
+
+.infodiv .top {
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+#tooManyGenres {
+  color: red;
+  font-size: 16px;
+  margin-left: 30px;
+  display: none;
+}

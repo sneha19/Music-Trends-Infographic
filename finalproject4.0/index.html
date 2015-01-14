@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<script src="js/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/barchart.js"></script>
+		<script type="text/javascript" src="js/linegraph.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<form class="ssForm">
+			Genre<input type="radio" class="stackedSelector" name="ss" value="genre" checked="checked">
+			Song Duration<input type="radio" class="stackedSelector" name="ss" value="length">
+		</form>
+		<form class="errorBarForm invisible">
+			Error Type
+			<select class="errorSelector">
+				<option value="stderr" class="errorType" selected> Standard Error </option>
+				<option value="stddev" class="errorType"> Standard Deviation </option>
+				<option value="conf" class="errorType"> 95% Confidence </option>
+			</select>
+		</form>
+		<div class="svgs"></div>
+		<div class="slider"></div>
+	    <div class="infodiv"></div>
+		<div id="tooManyGenres">Maximum of 5 genres can be selected at once.</div>
+	</body>
+</html>
